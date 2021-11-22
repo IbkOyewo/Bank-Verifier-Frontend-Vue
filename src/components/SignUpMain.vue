@@ -44,7 +44,7 @@ export default {
     },
     methods: {
         async signUp() {
-            let res = await axios.post('http://localhost:3500/api/register-user', {
+            let res = await axios.post('https://bank-verifer.herokuapp.com/api/register-user', {
                 firstName: this.firstName,
                 lastName: this.lastName,
                 email: this.email,

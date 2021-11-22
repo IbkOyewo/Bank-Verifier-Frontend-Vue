@@ -36,7 +36,7 @@ export default {
     },
     methods: {
         async login() {
-            let res = await axios.post('http://localhost:3500/api/login-user', {
+            let res = await axios.post('https://bank-verifer.herokuapp.com/api/login-user', {
                 email: this.email,
                 password: this.password
             });
